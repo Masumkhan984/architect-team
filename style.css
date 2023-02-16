@@ -10,12 +10,21 @@ body {
     line-height: 26px;
     color: #727272;
 }
+
 /* =====================
 Common CSS Styles
 ======================== */
-img{
+img {
     width: 100%;
 }
+
+p {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    color: #727272;
+}
+
 h1 {
     font-weight: 700;
     font-size: 4rem;
@@ -42,36 +51,214 @@ h3 {
     color: #FFFFFF;
     background-color: #FF900E;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 23px;
     text-align: center;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 5px;
 }
 
 /* ======================
 Header Area
 ========================= */
-header{
+header {
     padding: 20px 150px 50px 150px;
     background: rgba(255, 144, 14, 0.1);
+    background-size: cover;
 }
+
 /* ----navbar area---- */
-.navbar{
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.nav_menu ul{
+
+.nav_menu ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 80px;
+    gap: 40px;
 }
-.nav_menu ul li{
+
+.nav_menu ul li {
     list-style: none;
 }
-.nav_menu ul li a{
+
+.nav_menu ul li a {
     text-decoration: none;
-    color:#131313;
+    color: #131313;
     font-weight: 500;
     font-size: 18px;
+}
+
+/* ----------Hero Area---------- */
+.hero_area {
+    padding: 150px 0px 20px 0px;
+    text-align: center;
+}
+
+.hero_text {
+    padding: 0px 200px 80px 200px;
+}
+
+.hero_text>p {
+    margin: 30px 0px;
+}
+
+/* ============================
+Feature Section 
+=============================== */
+.feature_area {
+    padding: 120px 150px 50px 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+/* ===Feature images== */
+.feature_images {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+    row-gap: 10px;
+}
+
+.feature_img img {
+    width: 100%;
+}
+
+/* ===Feature Text=== */
+.feature_text {
+    flex: 1;
+    padding: 70px;
+}
+
+.feature_text>p {
+    padding: 30px 0px;
+}
+
+/* ==========================
+Responsive for Mobile Device
+============================= */
+
+@media only screen and (max-width:576px) {
+    /* =========== Common CSS Style ========== */
+    p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    /* ============ Header Area ======= */
+    header {
+        padding: 10px 20px 10px 20px;
+        display: none;
+    }
+
+    /* -----nav area----- */
+    .nav_menu {
+        display: none;
+    }
+
+    .nav_logo img {
+        width: 80%;
+    }
+
+    .toggle_menu {
+        display: inline-block;
+    }
+
+    .toggle_menu img {
+        width: 45px;
+    }
+
+    /* ------Hero Area -----*/
+    .hero_area {
+        padding: 95px 0px 40px 0px;
+    }
+
+    .hero_text {
+        padding: 0px 10px 50px 10px;
+    }
+
+    .hero_text>h1 {
+        font-size: 2rem;
+        line-height: 45px;
+    }
+
+    /* ======== Featue Area========= */
+    .feature_area {
+        padding: 10px 20px 10px 20px;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .feature_text {
+        padding: 25px 10px 50px 10px;
+        text-align: center;
+    }
+
+    .feature_images {
+        column-gap: 10px;
+        row-gap: 3px;
+    }
+
+}
+
+@media only screen and (min-width:577px) {
+    .toggle_menu {
+        display: none;
+    }
+}
+
+/* ==========================
+Responsive for Medium Device
+============================= */
+@media only screen and (min-width:577px) and (max-width:768px) {
+    /* =========== Common CSS Style ========== */
+    p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    /* ============ Header Area ======= */
+    header {
+        padding: 10px 20px 10px 20px;
+    }
+
+    /* -----nav area----- */
+    .nav_menu ul {
+        gap: 30px;
+    }
+
+    .nav_logo img {
+        width: 80%;
+    }
+
+    /* -------Hero Area------ */
+    .hero_text {
+        padding: 0px 20px 80px 20px;
+    }
+
+    /* ======== Featue Area========= */
+    .feature_area {
+        padding: 10px 20px 10px 20px;
+        gap: 5px;
+    }
+
+    .feature_text {
+        padding: 25px 10px 50px 10px;
+        text-align: center;
+    }
+    .feature_text>p {
+        padding: 10px 0px;
+    }
+
+    .feature_images {
+        padding: 30px;
+        column-gap: 10px;
+        row-gap: 3px;
+    }
 }
