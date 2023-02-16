@@ -210,10 +210,11 @@ Feature Section
     color: #FFFFFF;
 }
 
-/* =====================
-Facts Section
-======================== */
-.facts_area {
+/* ===========================
+Facts Section And Logo Section
+============================= */
+.facts_area,
+.logo_area {
     padding: 120px 150px 50px 150px;
     text-align: center;
 }
@@ -222,23 +223,105 @@ Facts Section
     width: 40%;
     text-align: start;
 }
-.facts_text>p{
+
+.facts_text>p {
     padding: 20px 0px;
 }
 
-.facts_boxes {
+.facts_boxes,
+.logo_images {
     margin-top: 40px;
     display: flex;
     justify-content: space-between;
     text-align: center;
 }
-.facts_box{
+
+.facts_box {
     padding: 20px 80px;
     border: 1px solid #FF900E;
 }
-.facts_box img{
+
+.facts_box img {
     width: 60%;
 }
+
+/* ======== Logo Section ====== */
+.logo_text {
+    text-align: center;
+    padding: 5% 20%;
+}
+
+.logos img {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+
+.logos:hover img {
+    filter: none;
+}
+
+/* ======================
+Foooter Section
+========================= */
+
+.footer {
+    padding: 120px 150px 50px 150px;
+    background: #000000;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.socail_footer>p {
+    color: #fff;
+    width: 40%;
+}
+
+.socail_footer>h2 {
+    color: #fff;
+}
+
+.icons {
+    display: flex;
+    justify-content: start;
+}
+
+.icon {
+    margin-right: 10px;
+}
+
+.contact {
+    margin: 10px 0px;
+}
+
+.contact>p {
+    color: #fff;
+}
+
+.subscribe_footer {
+    width: 60%;
+}
+
+.subscribe_footer>h2 {
+    color: #fff;
+}
+
+.input_field {
+    padding: 20px 5px;
+    border-radius: 5px;
+    margin: 10px 0px;
+    background: #005fac00;
+    border: 1px solid #fff;
+}
+
+/* ===CopyRight=== */
+.copyRight{
+    background-color: #000000;
+    text-align: center;
+    color: #FFFFFF;
+}
+
 /* ==========================
 Responsive for Mobile Device
 ============================= */
